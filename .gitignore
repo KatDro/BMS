@@ -1,0 +1,7 @@
+# gitignore for C++
+
+# Visual Studio intermediate files
+inter
+
+# Visual Studio cache/options directory
+.vs/
