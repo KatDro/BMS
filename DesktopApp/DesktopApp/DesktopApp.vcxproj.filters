@@ -31,9 +31,15 @@
     <ClCompile Include="DesktopApp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="commdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="DesktopApp.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="commdialog.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
@@ -41,10 +47,18 @@
     <QtUic Include="DesktopApp.ui">
       <Filter>Form Files</Filter>
     </QtUic>
+    <QtUic Include="commdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="DesktopApp.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Settings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

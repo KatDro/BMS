@@ -9,7 +9,8 @@ class DesktopApp : public QMainWindow
 
 public:
 	DesktopApp(QWidget *parent = Q_NULLPTR);
-
+private slots:
+	void exit();
 private:
 	Ui::DesktopAppClass ui;
 };
