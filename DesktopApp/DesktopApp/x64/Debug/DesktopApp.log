@@ -1,2 +1,5 @@
-﻿  main.cpp
+﻿  db_function.cpp
+  main.cpp
+  tempwindow.cpp
+C:\Users\Paweł\Desktop\Kasia\BMS\DesktopApp\DesktopApp\db_function.cpp(13,35): warning C4312:  'type cast': conversion from 'int' to 'char *' of greater size
   DesktopApp.vcxproj -> C:\Users\Paweł\Desktop\Kasia\BMS\DesktopApp\x64\Debug\DesktopApp.exe

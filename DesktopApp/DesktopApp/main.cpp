@@ -5,6 +5,12 @@
 #include <windows.h>
 #include <mysql.h>
 #include "Settings.h"
+#include "db_function.h"
+#include <string>
+#include <cstdlib>
+
+
+MYSQL* conn;
 
 int main(int argc, char* argv[])
 {
@@ -14,14 +20,12 @@ int main(int argc, char* argv[])
 	font.setPointSize(12);
 	QApplication::setFont(font);
 	//creating mysql connection
-	MYSQL* conn;
 	conn = mysql_init(NULL);
 	conn = mysql_real_connect(conn, HOST_NAME, DB_USERNAME, DB_PASSWORD, DB_NAME, 0, NULL, 0);
 	//checking mysql connection
 	QMessageBox* connMsg = new QMessageBox;
 	if (!conn)
 	{
-		connMsg->setText("Connection error.");
 		int repply = QMessageBox::information(connMsg, "Connection",
 			"Connection error. Can't connect to database.", QMessageBox::Ok,
 			QMessageBox::Abort);
@@ -35,6 +39,7 @@ int main(int argc, char* argv[])
 		int repply = QMessageBox::information(connMsg, "Connection",
 			"Connection successful.", QMessageBox::Ok);
 	}
+
 	w->show();
 
 	return app.exec();

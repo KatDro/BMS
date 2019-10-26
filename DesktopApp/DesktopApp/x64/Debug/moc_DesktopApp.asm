@@ -6,49 +6,54 @@ INCLUDELIB MSVCRTD
 INCLUDELIB OLDNAMES
 
 CONST	SEGMENT
-$SG132382 DB	'D:\Qt\5.12.5\msvc2017_64\include\QtCore\qmetatype.h', 00H
+$SG132522 DB	'D:\Qt\5.12.5\msvc2017_64\include\QtCore\qmetatype.h', 00H
 	ORG $+12
-$SG132383 DB	'qRegisterNormalizedMetaType was called with a not normal'
+$SG132523 DB	'qRegisterNormalizedMetaType was called with a not normal'
 	DB	'ized type name, please call qRegisterMetaType instead.', 00H
 	ORG $+1
-$SG132384 DB	'qRegisterNormalizedMetaType', 00H
+$SG132524 DB	'qRegisterNormalizedMetaType', 00H
 	ORG $+4
-$SG135346 DB	'D:\Qt\5.12.5\msvc2017_64\include\QtCore\qmetatype.h', 00H
+$SG135486 DB	'D:\Qt\5.12.5\msvc2017_64\include\QtCore\qmetatype.h', 00H
 	ORG $+12
-$SG135347 DB	'qRegisterNormalizedMetaType was called with a not normal'
+$SG135487 DB	'qRegisterNormalizedMetaType was called with a not normal'
 	DB	'ized type name, please call qRegisterMetaType instead.', 00H
 	ORG $+1
-$SG135348 DB	'qRegisterNormalizedMetaType', 00H
+$SG135488 DB	'qRegisterNormalizedMetaType', 00H
 	ORG $+4
-$SG135707 DB	'D:\Qt\5.12.5\msvc2017_64\include\QtCore\qmetatype.h', 00H
+$SG135847 DB	'D:\Qt\5.12.5\msvc2017_64\include\QtCore\qmetatype.h', 00H
 	ORG $+12
-$SG135708 DB	'qRegisterNormalizedMetaType was called with a not normal'
+$SG135848 DB	'qRegisterNormalizedMetaType was called with a not normal'
 	DB	'ized type name, please call qRegisterMetaType instead.', 00H
 	ORG $+1
-$SG135709 DB	'qRegisterNormalizedMetaType', 00H
+$SG135849 DB	'qRegisterNormalizedMetaType', 00H
 	ORG $+4
-$SG136068 DB	'D:\Qt\5.12.5\msvc2017_64\include\QtCore\qmetatype.h', 00H
+$SG136208 DB	'D:\Qt\5.12.5\msvc2017_64\include\QtCore\qmetatype.h', 00H
 	ORG $+12
-$SG136069 DB	'qRegisterNormalizedMetaType was called with a not normal'
+$SG136209 DB	'qRegisterNormalizedMetaType was called with a not normal'
 	DB	'ized type name, please call qRegisterMetaType instead.', 00H
 	ORG $+1
-$SG136070 DB	'qRegisterNormalizedMetaType', 00H
+$SG136210 DB	'qRegisterNormalizedMetaType', 00H
 	ORG $+4
 ?qt_meta_stringdata_DesktopApp@@3Uqt_meta_stringdata_DesktopApp_t@@B DD 0ffffffffH ; qt_meta_stringdata_DesktopApp
 	DD	0aH
 	DD	00H
 	ORG $+4
-	DQ	0000000000000048H
+	DQ	0000000000000060H
 	DD	0ffffffffH
 	DD	04H
 	DD	00H
 	ORG $+4
-	DQ	000000000000003bH
+	DQ	0000000000000053H
 	DD	0ffffffffH
 	DD	00H
 	DD	00H
 	ORG $+4
-	DQ	0000000000000028H
+	DQ	0000000000000040H
+	DD	0ffffffffH
+	DD	015H
+	DD	00H
+	ORG $+4
+	DQ	0000000000000029H
 	DB	044H
 	DB	065H
 	DB	073H
@@ -66,12 +71,35 @@ $SG136070 DB	'qRegisterNormalizedMetaType', 00H
 	DB	074H
 	DB	00H
 	DB	00H
-	ORG $+7
+	DB	06fH
+	DB	06eH
+	DB	05fH
+	DB	063H
+	DB	06cH
+	DB	069H
+	DB	063H
+	DB	06bH
+	DB	065H
+	DB	064H
+	DB	05fH
+	DB	074H
+	DB	065H
+	DB	06dH
+	DB	070H
+	DB	042H
+	DB	075H
+	DB	074H
+	DB	074H
+	DB	06fH
+	DB	06eH
+	DB	00H
+	ORG $+1
+	ORG $+8
 ?qt_meta_data_DesktopApp@@3QBIB DD 08H			; qt_meta_data_DesktopApp
 	DD	00H
 	DD	00H
 	DD	00H
-	DD	01H
+	DD	02H
 	DD	0eH
 	DD	00H
 	DD	00H
@@ -83,9 +111,15 @@ $SG136070 DB	'qRegisterNormalizedMetaType', 00H
 	DD	00H
 	DD	01H
 	DD	00H
-	DD	013H
+	DD	018H
 	DD	02H
 	DD	08H
+	DD	03H
+	DD	00H
+	DD	019H
+	DD	02H
+	DD	08H
+	DD	02bH
 	DD	02bH
 	DD	00H
 CONST	ENDS
@@ -102,6 +136,7 @@ EXTRN	__imp_?dynamicMetaObject@QObjectData@@QEBAPEAUQMetaObject@@XZ:PROC
 EXTRN	__imp_?qt_metacast@QMainWindow@@UEAAPEAXPEBD@Z:PROC
 EXTRN	__imp_?qt_metacall@QMainWindow@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z:PROC
 EXTRN	?exit@DesktopApp@@AEAAXXZ:PROC			; DesktopApp::exit
+EXTRN	?on_clicked_tempButton@DesktopApp@@AEAAXXZ:PROC	; DesktopApp::on_clicked_tempButton
 EXTRN	__imp_?staticMetaObject@QMainWindow@@2UQMetaObject@@B:BYTE
 _BSS	SEGMENT
 ?staticMetaObject@DesktopApp@@2UQMetaObject@@B DB 030H DUP (?) ; DesktopApp::staticMetaObject
@@ -114,10 +149,10 @@ $pdata$?qt_metacast@DesktopApp@@UEAAPEAXPEBD@Z DD imagerel $LN5
 	DD	imagerel $LN5+75
 	DD	imagerel $unwind$?qt_metacast@DesktopApp@@UEAAPEAXPEBD@Z
 $pdata$?qt_metacall@DesktopApp@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z DD imagerel $LN9
-	DD	imagerel $LN9+172
+	DD	imagerel $LN9+174
 	DD	imagerel $unwind$?qt_metacall@DesktopApp@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
-$pdata$?qt_static_metacall@DesktopApp@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z DD imagerel $LN8
-	DD	imagerel $LN8+72
+$pdata$?qt_static_metacall@DesktopApp@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z DD imagerel $LN9
+	DD	imagerel $LN9+91
 	DD	imagerel $unwind$?qt_static_metacall@DesktopApp@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z
 pdata	ENDS
 CRT$XCU	SEGMENT
@@ -138,21 +173,21 @@ xdata	ENDS
 text$di	SEGMENT
 ??__E?staticMetaObject@DesktopApp@@2UQMetaObject@@B@@YAXXZ PROC ; `dynamic initializer for 'DesktopApp::staticMetaObject'', COMDAT
 ; File C:\Users\Pawe許Desktop\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_DesktopApp.cpp
-; Line 79
+; Line 83
 	mov	rax, QWORD PTR __imp_?staticMetaObject@QMainWindow@@2UQMetaObject@@B
 	mov	QWORD PTR ?staticMetaObject@DesktopApp@@2UQMetaObject@@B, rax
-; Line 80
+; Line 84
 	lea	rax, OFFSET FLAT:?qt_meta_stringdata_DesktopApp@@3Uqt_meta_stringdata_DesktopApp_t@@B
 	mov	QWORD PTR ?staticMetaObject@DesktopApp@@2UQMetaObject@@B+8, rax
-; Line 81
+; Line 85
 	lea	rax, OFFSET FLAT:?qt_meta_data_DesktopApp@@3QBIB
 	mov	QWORD PTR ?staticMetaObject@DesktopApp@@2UQMetaObject@@B+16, rax
-; Line 82
+; Line 86
 	lea	rax, OFFSET FLAT:?qt_static_metacall@DesktopApp@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z ; DesktopApp::qt_static_metacall
 	mov	QWORD PTR ?staticMetaObject@DesktopApp@@2UQMetaObject@@B+24, rax
-; Line 83
+; Line 87
 	mov	QWORD PTR ?staticMetaObject@DesktopApp@@2UQMetaObject@@B+32, 0
-; Line 84
+; Line 88
 	mov	QWORD PTR ?staticMetaObject@DesktopApp@@2UQMetaObject@@B+40, 0
 	ret	0
 ??__E?staticMetaObject@DesktopApp@@2UQMetaObject@@B@@YAXXZ ENDP ; `dynamic initializer for 'DesktopApp::staticMetaObject''
@@ -167,32 +202,40 @@ _id$ = 80
 _a$ = 88
 ?qt_static_metacall@DesktopApp@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z PROC ; DesktopApp::qt_static_metacall
 ; File C:\Users\Pawe許Desktop\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_DesktopApp.cpp
-; Line 66
-$LN8:
+; Line 69
+$LN9:
 	mov	QWORD PTR [rsp+32], r9
 	mov	DWORD PTR [rsp+24], r8d
 	mov	DWORD PTR [rsp+16], edx
 	mov	QWORD PTR [rsp+8], rcx
 	sub	rsp, 56					; 00000038H
-; Line 67
+; Line 70
 	cmp	DWORD PTR _c$[rsp], 0
 	jne	SHORT $LN4@qt_static_
-; Line 68
+; Line 71
 	mov	rax, QWORD PTR _o$[rsp]
 	mov	QWORD PTR _t$1[rsp], rax
-; Line 70
+; Line 73
 	mov	eax, DWORD PTR _id$[rsp]
 	mov	DWORD PTR tv69[rsp], eax
 	cmp	DWORD PTR tv69[rsp], 0
 	je	SHORT $LN5@qt_static_
-	jmp	SHORT $LN6@qt_static_
+	cmp	DWORD PTR tv69[rsp], 1
+	je	SHORT $LN6@qt_static_
+	jmp	SHORT $LN7@qt_static_
 $LN5@qt_static_:
-; Line 71
+; Line 74
 	mov	rcx, QWORD PTR _t$1[rsp]
 	call	?exit@DesktopApp@@AEAAXXZ		; DesktopApp::exit
+	jmp	SHORT $LN2@qt_static_
 $LN6@qt_static_:
+; Line 75
+	mov	rcx, QWORD PTR _t$1[rsp]
+	call	?on_clicked_tempButton@DesktopApp@@AEAAXXZ ; DesktopApp::on_clicked_tempButton
+$LN7@qt_static_:
+$LN2@qt_static_:
 $LN4@qt_static_:
-; Line 76
+; Line 80
 	add	rsp, 56					; 00000038H
 	ret	0
 ?qt_static_metacall@DesktopApp@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z ENDP ; DesktopApp::qt_static_metacall
@@ -205,69 +248,69 @@ _id$ = 64
 _a$ = 72
 ?qt_metacall@DesktopApp@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z PROC ; DesktopApp::qt_metacall
 ; File C:\Users\Pawe許Desktop\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_DesktopApp.cpp
-; Line 102
+; Line 106
 $LN9:
 	mov	QWORD PTR [rsp+32], r9
 	mov	DWORD PTR [rsp+24], r8d
 	mov	DWORD PTR [rsp+16], edx
 	mov	QWORD PTR [rsp+8], rcx
 	sub	rsp, 40					; 00000028H
-; Line 103
+; Line 107
 	mov	r9, QWORD PTR _a$[rsp]
 	mov	r8d, DWORD PTR _id$[rsp]
 	mov	edx, DWORD PTR _c$[rsp]
 	mov	rcx, QWORD PTR this$[rsp]
 	call	QWORD PTR __imp_?qt_metacall@QMainWindow@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 	mov	DWORD PTR _id$[rsp], eax
-; Line 104
+; Line 108
 	cmp	DWORD PTR _id$[rsp], 0
 	jge	SHORT $LN2@qt_metacal
-; Line 105
+; Line 109
 	mov	eax, DWORD PTR _id$[rsp]
 	jmp	SHORT $LN1@qt_metacal
 $LN2@qt_metacal:
-; Line 106
+; Line 110
 	cmp	DWORD PTR _c$[rsp], 0
 	jne	SHORT $LN3@qt_metacal
-; Line 107
-	cmp	DWORD PTR _id$[rsp], 1
+; Line 111
+	cmp	DWORD PTR _id$[rsp], 2
 	jge	SHORT $LN5@qt_metacal
-; Line 108
+; Line 112
 	mov	r9, QWORD PTR _a$[rsp]
 	mov	r8d, DWORD PTR _id$[rsp]
 	mov	edx, DWORD PTR _c$[rsp]
 	mov	rcx, QWORD PTR this$[rsp]
 	call	?qt_static_metacall@DesktopApp@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z ; DesktopApp::qt_static_metacall
 $LN5@qt_metacal:
-; Line 109
+; Line 113
 	mov	eax, DWORD PTR _id$[rsp]
-	dec	eax
+	sub	eax, 2
 	mov	DWORD PTR _id$[rsp], eax
 	jmp	SHORT $LN4@qt_metacal
 $LN3@qt_metacal:
-; Line 110
+; Line 114
 	cmp	DWORD PTR _c$[rsp], 12
 	jne	SHORT $LN6@qt_metacal
-; Line 111
-	cmp	DWORD PTR _id$[rsp], 1
+; Line 115
+	cmp	DWORD PTR _id$[rsp], 2
 	jge	SHORT $LN7@qt_metacal
-; Line 112
+; Line 116
 	mov	eax, 8
 	imul	rax, rax, 0
 	mov	rcx, QWORD PTR _a$[rsp]
 	mov	rax, QWORD PTR [rcx+rax]
 	mov	DWORD PTR [rax], -1
 $LN7@qt_metacal:
-; Line 113
+; Line 117
 	mov	eax, DWORD PTR _id$[rsp]
-	dec	eax
+	sub	eax, 2
 	mov	DWORD PTR _id$[rsp], eax
 $LN6@qt_metacal:
 $LN4@qt_metacal:
-; Line 115
+; Line 119
 	mov	eax, DWORD PTR _id$[rsp]
 $LN1@qt_metacal:
-; Line 116
+; Line 120
 	add	rsp, 40					; 00000028H
 	ret	0
 ?qt_metacall@DesktopApp@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z ENDP ; DesktopApp::qt_metacall
@@ -278,33 +321,33 @@ this$ = 48
 _clname$ = 56
 ?qt_metacast@DesktopApp@@UEAAPEAXPEBD@Z PROC		; DesktopApp::qt_metacast
 ; File C:\Users\Pawe許Desktop\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_DesktopApp.cpp
-; Line 94
+; Line 98
 $LN5:
 	mov	QWORD PTR [rsp+16], rdx
 	mov	QWORD PTR [rsp+8], rcx
 	sub	rsp, 40					; 00000028H
-; Line 95
+; Line 99
 	cmp	QWORD PTR _clname$[rsp], 0
 	jne	SHORT $LN2@qt_metacas
 	xor	eax, eax
 	jmp	SHORT $LN1@qt_metacas
 $LN2@qt_metacas:
-; Line 96
-	lea	rdx, OFFSET FLAT:?qt_meta_stringdata_DesktopApp@@3Uqt_meta_stringdata_DesktopApp_t@@B+72
+; Line 100
+	lea	rdx, OFFSET FLAT:?qt_meta_stringdata_DesktopApp@@3Uqt_meta_stringdata_DesktopApp_t@@B+96
 	mov	rcx, QWORD PTR _clname$[rsp]
 	call	strcmp
 	test	eax, eax
 	jne	SHORT $LN3@qt_metacas
-; Line 97
+; Line 101
 	mov	rax, QWORD PTR this$[rsp]
 	jmp	SHORT $LN1@qt_metacas
 $LN3@qt_metacas:
-; Line 98
+; Line 102
 	mov	rdx, QWORD PTR _clname$[rsp]
 	mov	rcx, QWORD PTR this$[rsp]
 	call	QWORD PTR __imp_?qt_metacast@QMainWindow@@UEAAPEAXPEBD@Z
 $LN1@qt_metacas:
-; Line 99
+; Line 103
 	add	rsp, 40					; 00000028H
 	ret	0
 ?qt_metacast@DesktopApp@@UEAAPEAXPEBD@Z ENDP		; DesktopApp::qt_metacast
@@ -315,11 +358,11 @@ tv82 = 32
 this$ = 64
 ?metaObject@DesktopApp@@UEBAPEBUQMetaObject@@XZ PROC	; DesktopApp::metaObject
 ; File C:\Users\Pawe許Desktop\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_DesktopApp.cpp
-; Line 89
+; Line 93
 $LN5:
 	mov	QWORD PTR [rsp+8], rcx
 	sub	rsp, 56					; 00000038H
-; Line 90
+; Line 94
 	mov	rax, QWORD PTR this$[rsp]
 	add	rax, 8
 	mov	rcx, rax
@@ -339,7 +382,7 @@ $LN3@metaObject:
 	mov	QWORD PTR tv82[rsp], rax
 $LN4@metaObject:
 	mov	rax, QWORD PTR tv82[rsp]
-; Line 91
+; Line 95
 	add	rsp, 56					; 00000038H
 	ret	0
 ?metaObject@DesktopApp@@UEBAPEBUQMetaObject@@XZ ENDP	; DesktopApp::metaObject
@@ -366,7 +409,7 @@ __formal$ = 8
 __formal$ = 16
 ?__empty_global_delete@@YAXPEAX_K@Z PROC		; __empty_global_delete, COMDAT
 ; File C:\Users\Pawe許Desktop\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_DesktopApp.cpp
-; Line 119
+; Line 123
 	mov	QWORD PTR [rsp+16], rdx
 	mov	QWORD PTR [rsp+8], rcx
 	ret	0
@@ -378,7 +421,7 @@ _TEXT	SEGMENT
 __formal$ = 8
 ?__empty_global_delete@@YAXPEAX@Z PROC			; __empty_global_delete, COMDAT
 ; File C:\Users\Pawe許Desktop\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_DesktopApp.cpp
-; Line 119
+; Line 123
 	mov	QWORD PTR [rsp+8], rcx
 	ret	0
 ?__empty_global_delete@@YAXPEAX@Z ENDP			; __empty_global_delete

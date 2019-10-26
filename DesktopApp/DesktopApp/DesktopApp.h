@@ -11,6 +11,7 @@ public:
 	DesktopApp(QWidget *parent = Q_NULLPTR);
 private slots:
 	void exit();
+	void on_clicked_tempButton();
 private:
 	Ui::DesktopAppClass ui;
 };

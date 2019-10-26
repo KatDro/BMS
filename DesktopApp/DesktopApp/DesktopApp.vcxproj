@@ -95,8 +95,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="commdialog.cpp" />
+    <ClCompile Include="db_function.cpp" />
     <ClCompile Include="DesktopApp.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="tempwindow.cpp" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="DesktopApp.h" />
@@ -104,12 +106,15 @@
   <ItemGroup>
     <QtUic Include="commdialog.ui" />
     <QtUic Include="DesktopApp.ui" />
+    <QtUic Include="tempwindow.ui" />
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="DesktopApp.qrc" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="tempwindow.h" />
     <QtMoc Include="commdialog.h" />
+    <ClInclude Include="db_function.h" />
     <ClInclude Include="Settings.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
