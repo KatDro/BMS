@@ -2,5 +2,5 @@
 #include <string>
 #include <mysql.h>
 
-void tempInsert(MYSQL* con, std::string l, int v);
+void lightInsert(MYSQL* con, const std::string l, const int v);
 int tempFetch(MYSQL* con);

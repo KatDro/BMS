@@ -2,10 +2,8 @@
 #include <QApplication>
 #include <QMessageBox>
 #include <iostream>
-#include <windows.h>
 #include <mysql.h>
 #include "Settings.h"
-#include "db_function.h"
 #include <string>
 #include <cstdlib>
 

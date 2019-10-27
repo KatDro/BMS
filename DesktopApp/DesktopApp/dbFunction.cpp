@@ -1,32 +1,32 @@
-#include "db_function.h"
+#include "dbFunction.h"
 #include <mysql.h>
 #include <string>
 #include <QMessageBox>
 
-void tempInsert(MYSQL* conn, std::string l, int v)
+void lightInsert(MYSQL* conn, const std::string l, const int v)
 {
 	MYSQL_STMT* st;
 	MYSQL_BIND bind[3];
 	//Data for insert
-	const char* label[] = { l.c_str() };
-	char label_ind[] = { STMT_INDICATOR_NTS };
+	const char* date[] = { l.c_str() };
+	char date_ind[] = { STMT_INDICATOR_NTS };
 	const char* value[] = { (char*)v };
 	char value_ind[] = { STMT_INDICATOR_NTS };
 	char id_ind[] = { STMT_INDICATOR_NULL };
 	unsigned int array_size = 1;
 
 	st = mysql_stmt_init(conn);
-	mysql_stmt_prepare(st, "INSERT INTO test1 VALUES(?, ?, ?)", -1);
+	mysql_stmt_prepare(st, "INSERT INTO light VALUES(?, ?, ?)", -1);
 
 	memset(bind, 0, sizeof(MYSQL_BIND) * 3);
 
 	bind[0].u.indicator = id_ind;
 	bind[0].buffer_type = MYSQL_TYPE_LONG;
-	bind[1].buffer = label;
+	bind[1].buffer = date;
 	bind[1].buffer_type = MYSQL_TYPE_STRING;
-	bind[1].u.indicator = label_ind;
+	bind[1].u.indicator = date_ind;
 	bind[2].buffer = value;
-	bind[2].buffer_type = MYSQL_TYPE_LONG;
+	bind[2].buffer_type = MYSQL_TYPE_TINY;
 	bind[2].u.indicator = value_ind;
 
 	mysql_stmt_attr_set(st, STMT_ATTR_ARRAY_SIZE, &array_size);
@@ -34,7 +34,6 @@ void tempInsert(MYSQL* conn, std::string l, int v)
 	mysql_stmt_execute(st);
 
 	mysql_stmt_close(st);
-
 }
 
 int tempFetch(MYSQL* conn)

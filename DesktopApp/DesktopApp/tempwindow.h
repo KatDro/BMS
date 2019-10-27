@@ -10,4 +10,6 @@ class tempWindow : public QWidget, public Ui::tempWindow
 public:
 	tempWindow(QWidget *parent = Q_NULLPTR);
 	~tempWindow();	
+private slots:
+	void on_clicked_refreshButton();
 };

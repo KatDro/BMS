@@ -111,7 +111,7 @@ xdata	ENDS
 ;	COMDAT ??__E?staticMetaObject@commdialog@@2UQMetaObject@@B@@YAXXZ
 text$di	SEGMENT
 ??__E?staticMetaObject@commdialog@@2UQMetaObject@@B@@YAXXZ PROC ; `dynamic initializer for 'commdialog::staticMetaObject'', COMDAT
-; File C:\Users\Pawe許Desktop\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_commdialog.cpp
+; File D:\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_commdialog.cpp
 ; Line 66
 	mov	rax, QWORD PTR __imp_?staticMetaObject@QDialog@@2UQMetaObject@@B
 	mov	QWORD PTR ?staticMetaObject@commdialog@@2UQMetaObject@@B, rax
@@ -138,7 +138,7 @@ _c$ = 16
 _id$ = 24
 _a$ = 32
 ?qt_static_metacall@commdialog@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z PROC ; commdialog::qt_static_metacall
-; File C:\Users\Pawe許Desktop\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_commdialog.cpp
+; File D:\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_commdialog.cpp
 ; Line 58
 	mov	QWORD PTR [rsp+32], r9
 	mov	DWORD PTR [rsp+24], r8d
@@ -155,7 +155,7 @@ _c$ = 56
 _id$ = 64
 _a$ = 72
 ?qt_metacall@commdialog@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z PROC ; commdialog::qt_metacall
-; File C:\Users\Pawe許Desktop\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_commdialog.cpp
+; File D:\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_commdialog.cpp
 ; Line 91
 $LN3:
 	mov	QWORD PTR [rsp+32], r9
@@ -183,7 +183,7 @@ tv77 = 32
 this$ = 64
 _clname$ = 72
 ?qt_metacast@commdialog@@UEAAPEAXPEBD@Z PROC		; commdialog::qt_metacast
-; File C:\Users\Pawe許Desktop\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_commdialog.cpp
+; File D:\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_commdialog.cpp
 ; Line 81
 $LN8:
 	mov	QWORD PTR [rsp+16], rdx
@@ -239,7 +239,7 @@ _TEXT	SEGMENT
 tv82 = 32
 this$ = 64
 ?metaObject@commdialog@@UEBAPEBUQMetaObject@@XZ PROC	; commdialog::metaObject
-; File C:\Users\Pawe許Desktop\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_commdialog.cpp
+; File D:\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_commdialog.cpp
 ; Line 76
 $LN5:
 	mov	QWORD PTR [rsp+8], rcx
@@ -290,7 +290,7 @@ _TEXT	SEGMENT
 __formal$ = 8
 __formal$ = 16
 ?__empty_global_delete@@YAXPEAX_K@Z PROC		; __empty_global_delete, COMDAT
-; File C:\Users\Pawe許Desktop\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_commdialog.cpp
+; File D:\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_commdialog.cpp
 ; Line 97
 	mov	QWORD PTR [rsp+16], rdx
 	mov	QWORD PTR [rsp+8], rcx
@@ -302,7 +302,7 @@ _TEXT	ENDS
 _TEXT	SEGMENT
 __formal$ = 8
 ?__empty_global_delete@@YAXPEAX@Z PROC			; __empty_global_delete, COMDAT
-; File C:\Users\Pawe許Desktop\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_commdialog.cpp
+; File D:\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_commdialog.cpp
 ; Line 97
 	mov	QWORD PTR [rsp+8], rcx
 	ret	0

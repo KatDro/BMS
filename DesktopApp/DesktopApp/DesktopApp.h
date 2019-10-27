@@ -12,6 +12,8 @@ public:
 private slots:
 	void exit();
 	void on_clicked_tempButton();
+	void on_clicked_lightButton();
+	void on_clicked_humButton();
 private:
 	Ui::DesktopAppClass ui;
 };

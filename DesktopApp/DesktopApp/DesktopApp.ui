@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>617</width>
-    <height>304</height>
+    <width>544</width>
+    <height>294</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -41,24 +41,11 @@
     </item>
     <item>
      <layout class="QGridLayout" name="gridLayout">
-      <item row="2" column="0">
-       <widget class="QPushButton" name="lightButton">
-        <property name="maximumSize">
-         <size>
-          <width>100</width>
-          <height>25</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>Light</string>
-        </property>
-       </widget>
-      </item>
       <item row="0" column="0" alignment="Qt::AlignBottom">
        <widget class="QLabel" name="label_3">
         <property name="maximumSize">
          <size>
-          <width>16777215</width>
+          <width>150</width>
           <height>25</height>
          </size>
         </property>
@@ -67,37 +54,11 @@
         </property>
        </widget>
       </item>
-      <item row="2" column="2">
-       <widget class="QPushButton" name="humButton">
-        <property name="maximumSize">
-         <size>
-          <width>100</width>
-          <height>25</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>Humanity</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="1">
-       <widget class="QPushButton" name="tempButton">
-        <property name="maximumSize">
-         <size>
-          <width>100</width>
-          <height>25</height>
-         </size>
-        </property>
-        <property name="text">
-         <string>Temperature</string>
-        </property>
-       </widget>
-      </item>
       <item row="1" column="0" alignment="Qt::AlignTop">
        <widget class="QLabel" name="label_4">
         <property name="maximumSize">
          <size>
-          <width>100</width>
+          <width>200</width>
           <height>25</height>
          </size>
         </property>
@@ -106,22 +67,66 @@
         </property>
        </widget>
       </item>
-      <item row="0" column="1" alignment="Qt::AlignBottom">
-       <widget class="QLabel" name="label_5">
+      <item row="0" column="2" alignment="Qt::AlignBottom">
+       <widget class="QLabel" name="label_7">
+        <property name="maximumSize">
+         <size>
+          <width>150</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="text">
          <string>Open window for</string>
         </property>
        </widget>
       </item>
+      <item row="3" column="2" alignment="Qt::AlignHCenter">
+       <widget class="QPushButton" name="humButton">
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>29</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Humidity</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" alignment="Qt::AlignHCenter">
+       <widget class="QPushButton" name="lightButton">
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>29</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Light</string>
+        </property>
+       </widget>
+      </item>
       <item row="1" column="1" alignment="Qt::AlignTop">
        <widget class="QLabel" name="label_6">
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="text">
          <string>temperature information</string>
         </property>
        </widget>
       </item>
-      <item row="0" column="2" alignment="Qt::AlignBottom">
-       <widget class="QLabel" name="label_7">
+      <item row="0" column="1" alignment="Qt::AlignBottom">
+       <widget class="QLabel" name="label_5">
+        <property name="maximumSize">
+         <size>
+          <width>150</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="text">
          <string>Open window for</string>
         </property>
@@ -129,8 +134,27 @@
       </item>
       <item row="1" column="2" alignment="Qt::AlignTop">
        <widget class="QLabel" name="label_8">
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="text">
          <string>humanity information</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1" alignment="Qt::AlignHCenter">
+       <widget class="QPushButton" name="tempButton">
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>29</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Temperature</string>
         </property>
        </widget>
       </item>
@@ -145,14 +169,14 @@
        <widget class="QPushButton" name="exitButton">
         <property name="minimumSize">
          <size>
-          <width>100</width>
-          <height>25</height>
+          <width>0</width>
+          <height>0</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
           <width>100</width>
-          <height>25</height>
+          <height>29</height>
          </size>
         </property>
         <property name="text">
@@ -169,17 +193,10 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>617</width>
+     <width>544</width>
      <height>21</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuFile">
-    <property name="title">
-     <string>File</string>
-    </property>
-    <addaction name="actionExit"/>
-   </widget>
-   <addaction name="menuFile"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">

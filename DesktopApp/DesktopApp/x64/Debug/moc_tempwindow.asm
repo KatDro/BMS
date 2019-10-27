@@ -6,32 +6,42 @@ INCLUDELIB MSVCRTD
 INCLUDELIB OLDNAMES
 
 CONST	SEGMENT
-$SG132787 DB	'D:\Qt\5.12.5\msvc2017_64\include\QtCore\qmetatype.h', 00H
+$SG133653 DB	'D:\Qt\5.12.5\msvc2017_64\include\QtCore\qmetatype.h', 00H
 	ORG $+12
-$SG132788 DB	'qRegisterNormalizedMetaType was called with a not normal'
+$SG133654 DB	'qRegisterNormalizedMetaType was called with a not normal'
 	DB	'ized type name, please call qRegisterMetaType instead.', 00H
 	ORG $+1
-$SG132789 DB	'qRegisterNormalizedMetaType', 00H
+$SG133655 DB	'qRegisterNormalizedMetaType', 00H
 	ORG $+4
-$SG133148 DB	'D:\Qt\5.12.5\msvc2017_64\include\QtCore\qmetatype.h', 00H
+$SG134014 DB	'D:\Qt\5.12.5\msvc2017_64\include\QtCore\qmetatype.h', 00H
 	ORG $+12
-$SG133149 DB	'qRegisterNormalizedMetaType was called with a not normal'
+$SG134015 DB	'qRegisterNormalizedMetaType was called with a not normal'
 	DB	'ized type name, please call qRegisterMetaType instead.', 00H
 	ORG $+1
-$SG133150 DB	'qRegisterNormalizedMetaType', 00H
+$SG134016 DB	'qRegisterNormalizedMetaType', 00H
 	ORG $+4
-$SG133509 DB	'D:\Qt\5.12.5\msvc2017_64\include\QtCore\qmetatype.h', 00H
+$SG134375 DB	'D:\Qt\5.12.5\msvc2017_64\include\QtCore\qmetatype.h', 00H
 	ORG $+12
-$SG133510 DB	'qRegisterNormalizedMetaType was called with a not normal'
+$SG134376 DB	'qRegisterNormalizedMetaType was called with a not normal'
 	DB	'ized type name, please call qRegisterMetaType instead.', 00H
 	ORG $+1
-$SG133511 DB	'qRegisterNormalizedMetaType', 00H
+$SG134377 DB	'qRegisterNormalizedMetaType', 00H
 	ORG $+4
 ?qt_meta_stringdata_tempWindow@@3Uqt_meta_stringdata_tempWindow_t@@B DD 0ffffffffH ; qt_meta_stringdata_tempWindow
 	DD	0aH
 	DD	00H
 	ORG $+4
-	DQ	0000000000000018H
+	DQ	0000000000000048H
+	DD	0ffffffffH
+	DD	018H
+	DD	00H
+	ORG $+4
+	DQ	000000000000003bH
+	DD	0ffffffffH
+	DD	00H
+	DD	00H
+	ORG $+4
+	DQ	000000000000003cH
 	DB	074H
 	DB	065H
 	DB	06dH
@@ -43,11 +53,39 @@ $SG133511 DB	'qRegisterNormalizedMetaType', 00H
 	DB	06fH
 	DB	077H
 	DB	00H
-	ORG $+5
+	DB	06fH
+	DB	06eH
+	DB	05fH
+	DB	063H
+	DB	06cH
+	DB	069H
+	DB	063H
+	DB	06bH
+	DB	065H
+	DB	064H
+	DB	05fH
+	DB	072H
+	DB	065H
+	DB	066H
+	DB	072H
+	DB	065H
+	DB	073H
+	DB	068H
+	DB	042H
+	DB	075H
+	DB	074H
+	DB	074H
+	DB	06fH
+	DB	06eH
+	DB	00H
+	DB	00H
+	ORG $+3
 ?qt_meta_data_tempWindow@@3QBIB DD 08H			; qt_meta_data_tempWindow
 	DD	00H
 	DD	00H
 	DD	00H
+	DD	01H
+	DD	0eH
 	DD	00H
 	DD	00H
 	DD	00H
@@ -56,18 +94,22 @@ $SG133511 DB	'qRegisterNormalizedMetaType', 00H
 	DD	00H
 	DD	00H
 	DD	00H
+	DD	01H
 	DD	00H
-	DD	00H
+	DD	013H
+	DD	02H
+	DD	08H
+	DD	02bH
 	DD	00H
 	ORG $+4
-$SG119005 DB	'Ui::tempWindow', 00H
+$SG119729 DB	'Ui::tempWindow', 00H
 	ORG $+1
-$SG129829 DB	'D:\Qt\5.12.5\msvc2017_64\include\QtCore\qmetatype.h', 00H
+$SG130689 DB	'D:\Qt\5.12.5\msvc2017_64\include\QtCore\qmetatype.h', 00H
 	ORG $+4
-$SG129830 DB	'qRegisterNormalizedMetaType was called with a not normal'
+$SG130690 DB	'qRegisterNormalizedMetaType was called with a not normal'
 	DB	'ized type name, please call qRegisterMetaType instead.', 00H
 	ORG $+1
-$SG129831 DB	'qRegisterNormalizedMetaType', 00H
+$SG130691 DB	'qRegisterNormalizedMetaType', 00H
 CONST	ENDS
 PUBLIC	?__empty_global_delete@@YAXPEAX@Z		; __empty_global_delete
 PUBLIC	?__empty_global_delete@@YAXPEAX_K@Z		; __empty_global_delete
@@ -81,6 +123,7 @@ EXTRN	strcmp:PROC
 EXTRN	__imp_?dynamicMetaObject@QObjectData@@QEBAPEAUQMetaObject@@XZ:PROC
 EXTRN	__imp_?qt_metacast@QWidget@@UEAAPEAXPEBD@Z:PROC
 EXTRN	__imp_?qt_metacall@QWidget@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z:PROC
+EXTRN	?on_clicked_refreshButton@tempWindow@@AEAAXXZ:PROC ; tempWindow::on_clicked_refreshButton
 EXTRN	__imp_?staticMetaObject@QWidget@@2UQMetaObject@@B:BYTE
 _BSS	SEGMENT
 ?staticMetaObject@tempWindow@@2UQMetaObject@@B DB 030H DUP (?) ; tempWindow::staticMetaObject
@@ -92,9 +135,12 @@ $pdata$?metaObject@tempWindow@@UEBAPEBUQMetaObject@@XZ DD imagerel $LN5
 $pdata$?qt_metacast@tempWindow@@UEAAPEAXPEBD@Z DD imagerel $LN8
 	DD	imagerel $LN8+136
 	DD	imagerel $unwind$?qt_metacast@tempWindow@@UEAAPEAXPEBD@Z
-$pdata$?qt_metacall@tempWindow@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z DD imagerel $LN3
-	DD	imagerel $LN3+61
+$pdata$?qt_metacall@tempWindow@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z DD imagerel $LN9
+	DD	imagerel $LN9+172
 	DD	imagerel $unwind$?qt_metacall@tempWindow@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
+$pdata$?qt_static_metacall@tempWindow@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z DD imagerel $LN8
+	DD	imagerel $LN8+72
+	DD	imagerel $unwind$?qt_static_metacall@tempWindow@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z
 pdata	ENDS
 CRT$XCU	SEGMENT
 ??staticMetaObject$initializer$@tempWindow@@2P6AXXZEA@@3P6AXXZEA DQ FLAT:??__E?staticMetaObject@tempWindow@@2UQMetaObject@@B@@YAXXZ ; ??staticMetaObject$initializer$@tempWindow@@2P6AXXZEA@@3P6AXXZEA
@@ -106,45 +152,70 @@ $unwind$?qt_metacast@tempWindow@@UEAAPEAXPEBD@Z DD 010e01H
 	DD	0620eH
 $unwind$?qt_metacall@tempWindow@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z DD 011701H
 	DD	04217H
+$unwind$?qt_static_metacall@tempWindow@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z DD 011701H
+	DD	06217H
 xdata	ENDS
 ; Function compile flags: /Odtp
 ;	COMDAT ??__E?staticMetaObject@tempWindow@@2UQMetaObject@@B@@YAXXZ
 text$di	SEGMENT
 ??__E?staticMetaObject@tempWindow@@2UQMetaObject@@B@@YAXXZ PROC ; `dynamic initializer for 'tempWindow::staticMetaObject'', COMDAT
-; File C:\Users\Pawe許Desktop\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_tempwindow.cpp
-; Line 66
+; File D:\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_tempwindow.cpp
+; Line 80
 	mov	rax, QWORD PTR __imp_?staticMetaObject@QWidget@@2UQMetaObject@@B
 	mov	QWORD PTR ?staticMetaObject@tempWindow@@2UQMetaObject@@B, rax
-; Line 67
+; Line 81
 	lea	rax, OFFSET FLAT:?qt_meta_stringdata_tempWindow@@3Uqt_meta_stringdata_tempWindow_t@@B
 	mov	QWORD PTR ?staticMetaObject@tempWindow@@2UQMetaObject@@B+8, rax
-; Line 68
+; Line 82
 	lea	rax, OFFSET FLAT:?qt_meta_data_tempWindow@@3QBIB
 	mov	QWORD PTR ?staticMetaObject@tempWindow@@2UQMetaObject@@B+16, rax
-; Line 69
+; Line 83
 	lea	rax, OFFSET FLAT:?qt_static_metacall@tempWindow@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z ; tempWindow::qt_static_metacall
 	mov	QWORD PTR ?staticMetaObject@tempWindow@@2UQMetaObject@@B+24, rax
-; Line 70
+; Line 84
 	mov	QWORD PTR ?staticMetaObject@tempWindow@@2UQMetaObject@@B+32, 0
-; Line 71
+; Line 85
 	mov	QWORD PTR ?staticMetaObject@tempWindow@@2UQMetaObject@@B+40, 0
 	ret	0
 ??__E?staticMetaObject@tempWindow@@2UQMetaObject@@B@@YAXXZ ENDP ; `dynamic initializer for 'tempWindow::staticMetaObject''
 text$di	ENDS
 ; Function compile flags: /Odtp
 _TEXT	SEGMENT
-_o$ = 8
-_c$ = 16
-_id$ = 24
-_a$ = 32
+tv69 = 32
+_t$1 = 40
+_o$ = 64
+_c$ = 72
+_id$ = 80
+_a$ = 88
 ?qt_static_metacall@tempWindow@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z PROC ; tempWindow::qt_static_metacall
-; File C:\Users\Pawe許Desktop\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_tempwindow.cpp
-; Line 58
+; File D:\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_tempwindow.cpp
+; Line 67
+$LN8:
 	mov	QWORD PTR [rsp+32], r9
 	mov	DWORD PTR [rsp+24], r8d
 	mov	DWORD PTR [rsp+16], edx
 	mov	QWORD PTR [rsp+8], rcx
-; Line 63
+	sub	rsp, 56					; 00000038H
+; Line 68
+	cmp	DWORD PTR _c$[rsp], 0
+	jne	SHORT $LN4@qt_static_
+; Line 69
+	mov	rax, QWORD PTR _o$[rsp]
+	mov	QWORD PTR _t$1[rsp], rax
+; Line 71
+	mov	eax, DWORD PTR _id$[rsp]
+	mov	DWORD PTR tv69[rsp], eax
+	cmp	DWORD PTR tv69[rsp], 0
+	je	SHORT $LN5@qt_static_
+	jmp	SHORT $LN6@qt_static_
+$LN5@qt_static_:
+; Line 72
+	mov	rcx, QWORD PTR _t$1[rsp]
+	call	?on_clicked_refreshButton@tempWindow@@AEAAXXZ ; tempWindow::on_clicked_refreshButton
+$LN6@qt_static_:
+$LN4@qt_static_:
+; Line 77
+	add	rsp, 56					; 00000038H
 	ret	0
 ?qt_static_metacall@tempWindow@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z ENDP ; tempWindow::qt_static_metacall
 _TEXT	ENDS
@@ -155,24 +226,70 @@ _c$ = 56
 _id$ = 64
 _a$ = 72
 ?qt_metacall@tempWindow@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z PROC ; tempWindow::qt_metacall
-; File C:\Users\Pawe許Desktop\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_tempwindow.cpp
-; Line 91
-$LN3:
+; File D:\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_tempwindow.cpp
+; Line 105
+$LN9:
 	mov	QWORD PTR [rsp+32], r9
 	mov	DWORD PTR [rsp+24], r8d
 	mov	DWORD PTR [rsp+16], edx
 	mov	QWORD PTR [rsp+8], rcx
 	sub	rsp, 40					; 00000028H
-; Line 92
+; Line 106
 	mov	r9, QWORD PTR _a$[rsp]
 	mov	r8d, DWORD PTR _id$[rsp]
 	mov	edx, DWORD PTR _c$[rsp]
 	mov	rcx, QWORD PTR this$[rsp]
 	call	QWORD PTR __imp_?qt_metacall@QWidget@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z
 	mov	DWORD PTR _id$[rsp], eax
-; Line 93
+; Line 107
+	cmp	DWORD PTR _id$[rsp], 0
+	jge	SHORT $LN2@qt_metacal
+; Line 108
 	mov	eax, DWORD PTR _id$[rsp]
-; Line 94
+	jmp	SHORT $LN1@qt_metacal
+$LN2@qt_metacal:
+; Line 109
+	cmp	DWORD PTR _c$[rsp], 0
+	jne	SHORT $LN3@qt_metacal
+; Line 110
+	cmp	DWORD PTR _id$[rsp], 1
+	jge	SHORT $LN5@qt_metacal
+; Line 111
+	mov	r9, QWORD PTR _a$[rsp]
+	mov	r8d, DWORD PTR _id$[rsp]
+	mov	edx, DWORD PTR _c$[rsp]
+	mov	rcx, QWORD PTR this$[rsp]
+	call	?qt_static_metacall@tempWindow@@CAXPEAVQObject@@W4Call@QMetaObject@@HPEAPEAX@Z ; tempWindow::qt_static_metacall
+$LN5@qt_metacal:
+; Line 112
+	mov	eax, DWORD PTR _id$[rsp]
+	dec	eax
+	mov	DWORD PTR _id$[rsp], eax
+	jmp	SHORT $LN4@qt_metacal
+$LN3@qt_metacal:
+; Line 113
+	cmp	DWORD PTR _c$[rsp], 12
+	jne	SHORT $LN6@qt_metacal
+; Line 114
+	cmp	DWORD PTR _id$[rsp], 1
+	jge	SHORT $LN7@qt_metacal
+; Line 115
+	mov	eax, 8
+	imul	rax, rax, 0
+	mov	rcx, QWORD PTR _a$[rsp]
+	mov	rax, QWORD PTR [rcx+rax]
+	mov	DWORD PTR [rax], -1
+$LN7@qt_metacal:
+; Line 116
+	mov	eax, DWORD PTR _id$[rsp]
+	dec	eax
+	mov	DWORD PTR _id$[rsp], eax
+$LN6@qt_metacal:
+$LN4@qt_metacal:
+; Line 118
+	mov	eax, DWORD PTR _id$[rsp]
+$LN1@qt_metacal:
+; Line 119
 	add	rsp, 40					; 00000028H
 	ret	0
 ?qt_metacall@tempWindow@@UEAAHW4Call@QMetaObject@@HPEAPEAX@Z ENDP ; tempWindow::qt_metacall
@@ -183,35 +300,35 @@ tv77 = 32
 this$ = 64
 _clname$ = 72
 ?qt_metacast@tempWindow@@UEAAPEAXPEBD@Z PROC		; tempWindow::qt_metacast
-; File C:\Users\Pawe許Desktop\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_tempwindow.cpp
-; Line 81
+; File D:\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_tempwindow.cpp
+; Line 95
 $LN8:
 	mov	QWORD PTR [rsp+16], rdx
 	mov	QWORD PTR [rsp+8], rcx
 	sub	rsp, 56					; 00000038H
-; Line 82
+; Line 96
 	cmp	QWORD PTR _clname$[rsp], 0
 	jne	SHORT $LN2@qt_metacas
 	xor	eax, eax
 	jmp	SHORT $LN1@qt_metacas
 $LN2@qt_metacas:
-; Line 83
-	lea	rdx, OFFSET FLAT:?qt_meta_stringdata_tempWindow@@3Uqt_meta_stringdata_tempWindow_t@@B+24
+; Line 97
+	lea	rdx, OFFSET FLAT:?qt_meta_stringdata_tempWindow@@3Uqt_meta_stringdata_tempWindow_t@@B+72
 	mov	rcx, QWORD PTR _clname$[rsp]
 	call	strcmp
 	test	eax, eax
 	jne	SHORT $LN3@qt_metacas
-; Line 84
+; Line 98
 	mov	rax, QWORD PTR this$[rsp]
 	jmp	SHORT $LN1@qt_metacas
 $LN3@qt_metacas:
-; Line 85
-	lea	rdx, OFFSET FLAT:$SG119005
+; Line 99
+	lea	rdx, OFFSET FLAT:$SG119729
 	mov	rcx, QWORD PTR _clname$[rsp]
 	call	strcmp
 	test	eax, eax
 	jne	SHORT $LN4@qt_metacas
-; Line 86
+; Line 100
 	cmp	QWORD PTR this$[rsp], 0
 	je	SHORT $LN6@qt_metacas
 	mov	rax, QWORD PTR this$[rsp]
@@ -224,12 +341,12 @@ $LN7@qt_metacas:
 	mov	rax, QWORD PTR tv77[rsp]
 	jmp	SHORT $LN1@qt_metacas
 $LN4@qt_metacas:
-; Line 87
+; Line 101
 	mov	rdx, QWORD PTR _clname$[rsp]
 	mov	rcx, QWORD PTR this$[rsp]
 	call	QWORD PTR __imp_?qt_metacast@QWidget@@UEAAPEAXPEBD@Z
 $LN1@qt_metacas:
-; Line 88
+; Line 102
 	add	rsp, 56					; 00000038H
 	ret	0
 ?qt_metacast@tempWindow@@UEAAPEAXPEBD@Z ENDP		; tempWindow::qt_metacast
@@ -239,12 +356,12 @@ _TEXT	SEGMENT
 tv82 = 32
 this$ = 64
 ?metaObject@tempWindow@@UEBAPEBUQMetaObject@@XZ PROC	; tempWindow::metaObject
-; File C:\Users\Pawe許Desktop\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_tempwindow.cpp
-; Line 76
+; File D:\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_tempwindow.cpp
+; Line 90
 $LN5:
 	mov	QWORD PTR [rsp+8], rcx
 	sub	rsp, 56					; 00000038H
-; Line 77
+; Line 91
 	mov	rax, QWORD PTR this$[rsp]
 	add	rax, 8
 	mov	rcx, rax
@@ -264,7 +381,7 @@ $LN3@metaObject:
 	mov	QWORD PTR tv82[rsp], rax
 $LN4@metaObject:
 	mov	rax, QWORD PTR tv82[rsp]
-; Line 78
+; Line 92
 	add	rsp, 56					; 00000038H
 	ret	0
 ?metaObject@tempWindow@@UEBAPEBUQMetaObject@@XZ ENDP	; tempWindow::metaObject
@@ -290,8 +407,8 @@ _TEXT	SEGMENT
 __formal$ = 8
 __formal$ = 16
 ?__empty_global_delete@@YAXPEAX_K@Z PROC		; __empty_global_delete, COMDAT
-; File C:\Users\Pawe許Desktop\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_tempwindow.cpp
-; Line 97
+; File D:\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_tempwindow.cpp
+; Line 122
 	mov	QWORD PTR [rsp+16], rdx
 	mov	QWORD PTR [rsp+8], rcx
 	ret	0
@@ -302,8 +419,8 @@ _TEXT	ENDS
 _TEXT	SEGMENT
 __formal$ = 8
 ?__empty_global_delete@@YAXPEAX@Z PROC			; __empty_global_delete, COMDAT
-; File C:\Users\Pawe許Desktop\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_tempwindow.cpp
-; Line 97
+; File D:\Kasia\BMS\DesktopApp\DesktopApp\x64\Debug\moc\moc_tempwindow.cpp
+; Line 122
 	mov	QWORD PTR [rsp+8], rcx
 	ret	0
 ?__empty_global_delete@@YAXPEAX@Z ENDP			; __empty_global_delete

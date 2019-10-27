@@ -16,7 +16,6 @@
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
@@ -36,19 +35,18 @@ public:
     QLabel *label;
     QLabel *label_2;
     QGridLayout *gridLayout;
-    QPushButton *lightButton;
     QLabel *label_3;
-    QPushButton *humButton;
-    QPushButton *tempButton;
     QLabel *label_4;
-    QLabel *label_5;
-    QLabel *label_6;
     QLabel *label_7;
+    QPushButton *humButton;
+    QPushButton *lightButton;
+    QLabel *label_6;
+    QLabel *label_5;
     QLabel *label_8;
+    QPushButton *tempButton;
     QHBoxLayout *horizontalLayout;
     QPushButton *exitButton;
     QMenuBar *menuBar;
-    QMenu *menuFile;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
 
@@ -56,7 +54,7 @@ public:
     {
         if (DesktopAppClass->objectName().isEmpty())
             DesktopAppClass->setObjectName(QString::fromUtf8("DesktopAppClass"));
-        DesktopAppClass->resize(617, 304);
+        DesktopAppClass->resize(544, 294);
         actionExit = new QAction(DesktopAppClass);
         actionExit->setObjectName(QString::fromUtf8("actionExit"));
         centralWidget = new QWidget(DesktopAppClass);
@@ -85,55 +83,59 @@ public:
         gridLayout = new QGridLayout();
         gridLayout->setSpacing(6);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        lightButton = new QPushButton(centralWidget);
-        lightButton->setObjectName(QString::fromUtf8("lightButton"));
-        lightButton->setMaximumSize(QSize(100, 25));
-
-        gridLayout->addWidget(lightButton, 2, 0, 1, 1);
-
         label_3 = new QLabel(centralWidget);
         label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setMaximumSize(QSize(16777215, 25));
+        label_3->setMaximumSize(QSize(150, 25));
 
         gridLayout->addWidget(label_3, 0, 0, 1, 1, Qt::AlignBottom);
 
-        humButton = new QPushButton(centralWidget);
-        humButton->setObjectName(QString::fromUtf8("humButton"));
-        humButton->setMaximumSize(QSize(100, 25));
-
-        gridLayout->addWidget(humButton, 2, 2, 1, 1);
-
-        tempButton = new QPushButton(centralWidget);
-        tempButton->setObjectName(QString::fromUtf8("tempButton"));
-        tempButton->setMaximumSize(QSize(100, 25));
-
-        gridLayout->addWidget(tempButton, 2, 1, 1, 1);
-
         label_4 = new QLabel(centralWidget);
         label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setMaximumSize(QSize(100, 25));
+        label_4->setMaximumSize(QSize(200, 25));
 
         gridLayout->addWidget(label_4, 1, 0, 1, 1, Qt::AlignTop);
 
-        label_5 = new QLabel(centralWidget);
-        label_5->setObjectName(QString::fromUtf8("label_5"));
-
-        gridLayout->addWidget(label_5, 0, 1, 1, 1, Qt::AlignBottom);
-
-        label_6 = new QLabel(centralWidget);
-        label_6->setObjectName(QString::fromUtf8("label_6"));
-
-        gridLayout->addWidget(label_6, 1, 1, 1, 1, Qt::AlignTop);
-
         label_7 = new QLabel(centralWidget);
         label_7->setObjectName(QString::fromUtf8("label_7"));
+        label_7->setMaximumSize(QSize(150, 16777215));
 
         gridLayout->addWidget(label_7, 0, 2, 1, 1, Qt::AlignBottom);
 
+        humButton = new QPushButton(centralWidget);
+        humButton->setObjectName(QString::fromUtf8("humButton"));
+        humButton->setMaximumSize(QSize(100, 29));
+
+        gridLayout->addWidget(humButton, 3, 2, 1, 1, Qt::AlignHCenter);
+
+        lightButton = new QPushButton(centralWidget);
+        lightButton->setObjectName(QString::fromUtf8("lightButton"));
+        lightButton->setMaximumSize(QSize(100, 29));
+
+        gridLayout->addWidget(lightButton, 3, 0, 1, 1, Qt::AlignHCenter);
+
+        label_6 = new QLabel(centralWidget);
+        label_6->setObjectName(QString::fromUtf8("label_6"));
+        label_6->setMaximumSize(QSize(200, 16777215));
+
+        gridLayout->addWidget(label_6, 1, 1, 1, 1, Qt::AlignTop);
+
+        label_5 = new QLabel(centralWidget);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+        label_5->setMaximumSize(QSize(150, 16777215));
+
+        gridLayout->addWidget(label_5, 0, 1, 1, 1, Qt::AlignBottom);
+
         label_8 = new QLabel(centralWidget);
         label_8->setObjectName(QString::fromUtf8("label_8"));
+        label_8->setMaximumSize(QSize(200, 16777215));
 
         gridLayout->addWidget(label_8, 1, 2, 1, 1, Qt::AlignTop);
+
+        tempButton = new QPushButton(centralWidget);
+        tempButton->setObjectName(QString::fromUtf8("tempButton"));
+        tempButton->setMaximumSize(QSize(100, 29));
+
+        gridLayout->addWidget(tempButton, 3, 1, 1, 1, Qt::AlignHCenter);
 
 
         verticalLayout->addLayout(gridLayout);
@@ -144,8 +146,8 @@ public:
         horizontalLayout->setSizeConstraint(QLayout::SetFixedSize);
         exitButton = new QPushButton(centralWidget);
         exitButton->setObjectName(QString::fromUtf8("exitButton"));
-        exitButton->setMinimumSize(QSize(100, 25));
-        exitButton->setMaximumSize(QSize(100, 25));
+        exitButton->setMinimumSize(QSize(0, 0));
+        exitButton->setMaximumSize(QSize(100, 29));
 
         horizontalLayout->addWidget(exitButton, 0, Qt::AlignRight);
 
@@ -155,9 +157,7 @@ public:
         DesktopAppClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(DesktopAppClass);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 617, 21));
-        menuFile = new QMenu(menuBar);
-        menuFile->setObjectName(QString::fromUtf8("menuFile"));
+        menuBar->setGeometry(QRect(0, 0, 544, 21));
         DesktopAppClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(DesktopAppClass);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
@@ -165,9 +165,6 @@ public:
         statusBar = new QStatusBar(DesktopAppClass);
         statusBar->setObjectName(QString::fromUtf8("statusBar"));
         DesktopAppClass->setStatusBar(statusBar);
-
-        menuBar->addAction(menuFile->menuAction());
-        menuFile->addAction(actionExit);
 
         retranslateUi(DesktopAppClass);
 
@@ -180,17 +177,16 @@ public:
         actionExit->setText(QApplication::translate("DesktopAppClass", "Exit", nullptr));
         label->setText(QApplication::translate("DesktopAppClass", "Welcome in House Management System", nullptr));
         label_2->setText(QApplication::translate("DesktopAppClass", "MY HOME", nullptr));
-        lightButton->setText(QApplication::translate("DesktopAppClass", "Light", nullptr));
         label_3->setText(QApplication::translate("DesktopAppClass", "Open window for", nullptr));
-        humButton->setText(QApplication::translate("DesktopAppClass", "Humanity", nullptr));
-        tempButton->setText(QApplication::translate("DesktopAppClass", "Temperature", nullptr));
         label_4->setText(QApplication::translate("DesktopAppClass", "light control", nullptr));
-        label_5->setText(QApplication::translate("DesktopAppClass", "Open window for", nullptr));
-        label_6->setText(QApplication::translate("DesktopAppClass", "temperature information", nullptr));
         label_7->setText(QApplication::translate("DesktopAppClass", "Open window for", nullptr));
+        humButton->setText(QApplication::translate("DesktopAppClass", "Humidity", nullptr));
+        lightButton->setText(QApplication::translate("DesktopAppClass", "Light", nullptr));
+        label_6->setText(QApplication::translate("DesktopAppClass", "temperature information", nullptr));
+        label_5->setText(QApplication::translate("DesktopAppClass", "Open window for", nullptr));
         label_8->setText(QApplication::translate("DesktopAppClass", "humanity information", nullptr));
+        tempButton->setText(QApplication::translate("DesktopAppClass", "Temperature", nullptr));
         exitButton->setText(QApplication::translate("DesktopAppClass", "EXIT", nullptr));
-        menuFile->setTitle(QApplication::translate("DesktopAppClass", "File", nullptr));
     } // retranslateUi
 
 };

@@ -67,13 +67,13 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
-      <AdditionalIncludeDirectories>C:\Users\Paweł\Desktop\Kasia\BMS\DesktopApp\DesktopApp\headers;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Kasia\BMS\DesktopApp\DesktopApp\headers;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\Paweł\Desktop\Kasia\BMS\DesktopApp\DesktopApp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\Kasia\BMS\DesktopApp\DesktopApp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>libmariadb.lib;mariadbclient.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -83,20 +83,21 @@
       <DebugInformationFormat />
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
-      <AdditionalIncludeDirectories>C:\Users\Paweł\Desktop\Kasia\BMS\DesktopApp\DesktopApp\headers;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Kasia\BMS\DesktopApp\DesktopApp\headers;.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
       <GenerateDebugInformation>false</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\Paweł\Desktop\Kasia\BMS\DesktopApp\DesktopApp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\Kasia\BMS\DesktopApp\DesktopApp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>libmariadb.lib;mariadbclient.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="commdialog.cpp" />
-    <ClCompile Include="db_function.cpp" />
+    <ClCompile Include="dbFunction.cpp" />
     <ClCompile Include="DesktopApp.cpp" />
+    <ClCompile Include="humiditywindow.cpp" />
+    <ClCompile Include="lightwindow.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="tempwindow.cpp" />
   </ItemGroup>
@@ -104,8 +105,9 @@
     <QtMoc Include="DesktopApp.h" />
   </ItemGroup>
   <ItemGroup>
-    <QtUic Include="commdialog.ui" />
     <QtUic Include="DesktopApp.ui" />
+    <QtUic Include="humiditywindow.ui" />
+    <QtUic Include="lightwindow.ui" />
     <QtUic Include="tempwindow.ui" />
   </ItemGroup>
   <ItemGroup>
@@ -113,8 +115,10 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="tempwindow.h" />
-    <QtMoc Include="commdialog.h" />
-    <ClInclude Include="db_function.h" />
+    <ClInclude Include="dbFunction.h" />
+    <QtMoc Include="lightwindow.h" />
+    <QtMoc Include="humiditywindow.h" />
+    <ClInclude Include="QtFunction.h" />
     <ClInclude Include="Settings.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

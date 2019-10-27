@@ -31,13 +31,16 @@
     <ClCompile Include="DesktopApp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="commdialog.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="tempwindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="db_function.cpp">
+    <ClCompile Include="lightwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dbFunction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="humiditywindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -45,10 +48,13 @@
     <QtMoc Include="DesktopApp.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="commdialog.h">
+    <QtMoc Include="tempwindow.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="tempwindow.h">
+    <QtMoc Include="lightwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="humiditywindow.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
@@ -56,10 +62,13 @@
     <QtUic Include="DesktopApp.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtUic Include="commdialog.ui">
+    <QtUic Include="tempwindow.ui">
       <Filter>Form Files</Filter>
     </QtUic>
-    <QtUic Include="tempwindow.ui">
+    <QtUic Include="lightwindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="humiditywindow.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>
@@ -72,7 +81,10 @@
     <ClInclude Include="Settings.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="db_function.h">
+    <ClInclude Include="QtFunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dbFunction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
